@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Vazir Light";
+    src: local("Vazir Light"),
+      url("./fonts/Vazirmatn-Light.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Vazir Regular";
+    src: local("Vazir Regular"),
+      url("./fonts/Vazirmatn-Regular.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Vazir Medium";
+    src: local("Vazir Medium"),
+      url("./fonts/Vazirmatn-Medium.ttf") format("truetype");
+    font-display: swap;
+  }
+}
+
+@layer components {
+  .customGradient {
+    background: #ce9ef2;
+    background: -moz-linear-gradient(312deg, #ce9ef2 0%, #f4f0ff 100%);
+    background: -webkit-linear-gradient(312deg, #ce9ef2 0%, #f4f0ff 100%);
+    background: linear-gradient(312deg, #ce9ef2 0%, #f4f0ff 100%);
+  }
+  .customDirction {
+    direction: rtl;
+    text-align: end;
+  }
+  .ant-select-selection-item > p {
+    flex-direction: row;
+  }
+  .customBlur {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .customBlurSuggest {
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+  }
+  .custom-shape-divider-top-1721471154 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .custom-shape-divider-top-1721471154 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 120px;
+  }
+
+  .ant-collapse-header .animationBg {
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+
+    height: 10px;
+
+    padding: 2px 1px;
+    background-color: whitesmoke;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #a855f7;
+
+    border-radius: 10px;
+  }
+  ::-moz-scrollbar {
+    width: 10px;
+
+    height: 10px;
+
+    padding: 2px 1px;
+    background-color: whitesmoke;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background-color: #a855f7;
+
+    border-radius: 10px;
+  }
+
+  ::-ms-scrollbar {
+    width: 10px;
+
+    height: 10px;
+
+    padding: 2px 1px;
+    background-color: whitesmoke;
+  }
+
+  ::-ms-scrollbar-thumb {
+    background-color: #a855f7;
+
+    border-radius: 10px;
+  }
+
+  ::scrollbar {
+    width: 10px;
+
+    height: 10px;
+
+    padding: 2px 1px;
+    background-color: whitesmoke;
+  }
+
+  ::scrollbar-thumb {
+    border-radius: 10px;
+  }
+}
